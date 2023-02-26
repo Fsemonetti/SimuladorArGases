@@ -1,0 +1,75 @@
+object Form3: TForm3
+  Left = -8
+  Height = 1057
+  Top = -8
+  Width = 1920
+  Caption = 'Form3'
+  ClientHeight = 1057
+  ClientWidth = 1920
+  LCLVersion = '2.2.0.1'
+  object StringGrid1: TStringGrid
+    Left = 8
+    Height = 1008
+    Top = 32
+    Width = 1032
+    ColCount = 7
+    FixedCols = 0
+    TabOrder = 0
+    ColWidths = (
+      113
+      457
+      118
+      111
+      72
+      67
+      67
+    )
+  end
+  object Button1: TButton
+    Left = 960
+    Height = 25
+    Top = 0
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object ComboBox1: TComboBox
+    Left = 8
+    Height = 29
+    Top = 0
+    Width = 132
+    AutoComplete = True
+    AutoCompleteText = [cbactEnabled, cbactEndOfLineComplete, cbactSearchAscending]
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 21
+    OnChange = ComboBox1Change
+    ParentFont = False
+    TabOrder = 2
+    Text = 'ComboBox1'
+  end
+  object StringGrid2: TStringGrid
+    Left = 1048
+    Height = 472
+    Top = 32
+    Width = 864
+    ColCount = 7
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    TabOrder = 3
+    OnClick = StringGrid2Click
+    ColWidths = (
+      83
+      57
+      205
+      111
+      254
+      67
+      67
+    )
+  end
+end

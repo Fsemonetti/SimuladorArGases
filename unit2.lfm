@@ -1,0 +1,686 @@
+object Form2: TForm2
+  Left = 212
+  Height = 630
+  Top = 146
+  Width = 1096
+  Caption = 'Lógicas dos acionamentos'
+  ClientHeight = 630
+  ClientWidth = 1096
+  Color = clScrollBar
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '2.2.0.1'
+  object StaticText1: TStaticText
+    Left = 8
+    Height = 32
+    Top = 56
+    Width = 186
+    Alignment = taCenter
+    BorderStyle = sbsSingle
+    Caption = 'ABERTA'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = '@Microsoft JhengHei UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 10
+    Height = 48
+    Top = 104
+    Width = 182
+    Caption = 'Abrir'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 10
+    Height = 48
+    Top = 160
+    Width = 182
+    Caption = 'Fechar'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+  end
+  object DisjNome: TStaticText
+    Left = 2
+    Height = 32
+    Top = 8
+    Width = 192
+    Alignment = taCenter
+    BorderStyle = sbsSingle
+    Caption = 'I723XXX'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = '@Microsoft JhengHei UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+  end
+  object DisjNome1: TStaticText
+    Left = 200
+    Height = 32
+    Top = 8
+    Width = 888
+    Alignment = taCenter
+    BorderStyle = sbsSingle
+    Caption = 'Ventilador induzido 1'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = '@Microsoft JhengHei UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 4
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 205
+    Height = 305
+    Top = 48
+    Width = 416
+    AutoFill = True
+    Caption = 'Manobras'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 285
+    ClientWidth = 412
+    ParentFont = False
+    TabOrder = 5
+    object RadioButton1: TRadioButton
+      Tag = 1
+      Left = 6
+      Height = 24
+      Top = 6
+      Width = 400
+      Caption = 'RadioButton1'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -18
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 0
+    end
+    object RadioButton2: TRadioButton
+      Tag = 2
+      Left = 6
+      Height = 24
+      Top = 30
+      Width = 400
+      Caption = 'RadioButton2'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -18
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 1
+    end
+    object RadioButton3: TRadioButton
+      Tag = 3
+      Left = 6
+      Height = 25
+      Top = 54
+      Width = 400
+      Caption = 'RadioButton3'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -18
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 2
+    end
+    object RadioButton4: TRadioButton
+      Tag = 4
+      Left = 6
+      Height = 25
+      Top = 79
+      Width = 400
+      Caption = 'RadioButton4'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -18
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 3
+    end
+    object RadioButton5: TRadioButton
+      Tag = 5
+      Left = 6
+      Height = 25
+      Top = 104
+      Width = 400
+      Caption = 'RadioButton5'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -18
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 4
+    end
+    object RadioButton6: TRadioButton
+      Tag = 6
+      Left = 6
+      Height = 25
+      Top = 129
+      Width = 400
+      Caption = 'RadioButton6'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -18
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 5
+    end
+    object RadioButton7: TRadioButton
+      Tag = 7
+      Left = 6
+      Height = 25
+      Top = 154
+      Width = 400
+      Caption = 'RadioButton7'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -18
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 6
+    end
+    object RadioButton8: TRadioButton
+      Tag = 8
+      Left = 6
+      Height = 25
+      Top = 179
+      Width = 400
+      Caption = 'RadioButton8'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -18
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 7
+    end
+    object RadioButton9: TRadioButton
+      Tag = 9
+      Left = 6
+      Height = 25
+      Top = 204
+      Width = 400
+      Caption = 'RadioButton9'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -18
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 8
+    end
+    object RadioButton10: TRadioButton
+      Tag = 10
+      Left = 6
+      Height = 25
+      Top = 229
+      Width = 400
+      Caption = 'RadioButton10'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -18
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 9
+    end
+    object RadioButton11: TRadioButton
+      Tag = 11
+      Left = 6
+      Height = 25
+      Top = 254
+      Width = 400
+      Caption = 'RadioButton11'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -18
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 10
+    end
+  end
+  object CheckGroup1: TCheckGroup
+    Left = 619
+    Height = 520
+    Top = 48
+    Width = 475
+    AutoFill = True
+    Caption = 'Condições'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 500
+    ClientWidth = 471
+    ParentFont = False
+    TabOrder = 6
+    object CheckBox1: TCheckBox
+      Tag = 12
+      Left = 6
+      Height = 24
+      Top = 6
+      Width = 459
+      Caption = 'CheckBox1 CheckBox1 CheckBox1CheckBox1'
+      Color = clActiveCaption
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+    end
+    object CheckBox2: TCheckBox
+      Tag = 13
+      Left = 6
+      Height = 24
+      Top = 30
+      Width = 459
+      Caption = 'CheckBox2'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+    end
+    object CheckBox3: TCheckBox
+      Tag = 14
+      Left = 6
+      Height = 24
+      Top = 54
+      Width = 459
+      Caption = 'CheckBox3'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+    end
+    object CheckBox4: TCheckBox
+      Tag = 15
+      Left = 6
+      Height = 24
+      Top = 78
+      Width = 459
+      Caption = 'CheckBox4'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 3
+    end
+    object CheckBox5: TCheckBox
+      Tag = 16
+      Left = 6
+      Height = 24
+      Top = 102
+      Width = 459
+      Caption = 'CheckBox5'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 4
+    end
+    object CheckBox6: TCheckBox
+      Tag = 17
+      Left = 6
+      Height = 24
+      Top = 126
+      Width = 459
+      Caption = 'CheckBox6'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 5
+    end
+    object CheckBox7: TCheckBox
+      Tag = 18
+      Left = 6
+      Height = 24
+      Top = 150
+      Width = 459
+      Caption = 'CheckBox7'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 6
+    end
+    object CheckBox8: TCheckBox
+      Tag = 19
+      Left = 6
+      Height = 24
+      Top = 174
+      Width = 459
+      Caption = 'CheckBox8'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 7
+    end
+    object CheckBox9: TCheckBox
+      Tag = 20
+      Left = 6
+      Height = 24
+      Top = 198
+      Width = 459
+      Caption = 'CheckBox9'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 8
+    end
+    object CheckBox10: TCheckBox
+      Tag = 21
+      Left = 6
+      Height = 24
+      Top = 222
+      Width = 459
+      Caption = 'CheckBox10'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 9
+    end
+    object CheckBox11: TCheckBox
+      Tag = 22
+      Left = 6
+      Height = 24
+      Top = 246
+      Width = 459
+      Caption = 'CheckBox11'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 10
+    end
+    object CheckBox12: TCheckBox
+      Tag = 23
+      Left = 6
+      Height = 24
+      Top = 270
+      Width = 459
+      Caption = 'CheckBox12'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 11
+    end
+    object CheckBox13: TCheckBox
+      Tag = 23
+      Left = 6
+      Height = 25
+      Top = 294
+      Width = 459
+      Caption = 'CheckBox13'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 12
+    end
+    object CheckBox14: TCheckBox
+      Tag = 23
+      Left = 6
+      Height = 25
+      Top = 319
+      Width = 459
+      Caption = 'CheckBox14'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 13
+    end
+    object CheckBox15: TCheckBox
+      Tag = 23
+      Left = 6
+      Height = 25
+      Top = 344
+      Width = 459
+      Caption = 'CheckBox15'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 14
+    end
+    object CheckBox16: TCheckBox
+      Tag = 23
+      Left = 6
+      Height = 25
+      Top = 369
+      Width = 459
+      Caption = 'CheckBox16'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 15
+    end
+    object CheckBox17: TCheckBox
+      Tag = 23
+      Left = 6
+      Height = 25
+      Top = 394
+      Width = 459
+      Caption = 'CheckBox17'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 16
+    end
+    object CheckBox18: TCheckBox
+      Tag = 23
+      Left = 6
+      Height = 25
+      Top = 419
+      Width = 459
+      Caption = 'CheckBox18'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 17
+    end
+    object CheckBox19: TCheckBox
+      Tag = 23
+      Left = 6
+      Height = 25
+      Top = 444
+      Width = 459
+      Caption = 'CheckBox19'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 18
+    end
+    object CheckBox20: TCheckBox
+      Tag = 23
+      Left = 6
+      Height = 25
+      Top = 469
+      Width = 459
+      Caption = 'CheckBox20'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 19
+    end
+  end
+  object Button11: TButton
+    Left = 520
+    Height = 37
+    Top = 568
+    Width = 109
+    Caption = 'SAIR'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Button11Click
+    ParentFont = False
+    TabOrder = 7
+  end
+end
