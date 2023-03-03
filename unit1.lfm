@@ -7,8 +7,9 @@ object Form1: TForm1
   ClientHeight = 1057
   ClientWidth = 1920
   Color = 10733257
+  OnClose = FormClose
   OnCreate = FormCreate
-  LCLVersion = '2.2.0.1'
+  OnShow = FormShow
   object I723EMT1101: TPanelEstacaoMotor
     Left = 9
     Height = 91
@@ -19,12 +20,10 @@ object Form1: TForm1
     Color = 9539912
     ParentColor = False
     TabOrder = 0
-    OnClick = I723EMT1101Click
     DescriSuperior = 'Ventilador Induzido 1'
     DescriInferior = 'I723EMT1101'
-    BtDesliga = I723EMT1101BtAjuda
-    BtLiga = I723EMT1101BtLiga
-    BtAjuda = I723EMT1101BtAjuda
+    BtDesliga = I723EMT1101BtDesliga
+    BtAjuda = I723EMT1101BtDesliga
     Ligado = False
     Desligado = True
     bloqueado = False

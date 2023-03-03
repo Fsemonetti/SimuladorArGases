@@ -9,7 +9,7 @@ object Form2: TForm2
   Color = clScrollBar
   OnClose = FormClose
   OnCreate = FormCreate
-  LCLVersion = '2.2.0.1'
+  OnShow = FormShow
   object StaticText1: TStaticText
     Left = 8
     Height = 32
@@ -91,7 +91,7 @@ object Form2: TForm2
   end
   object RadioGroup1: TRadioGroup
     Left = 205
-    Height = 305
+    Height = 516
     Top = 48
     Width = 416
     AutoFill = True
@@ -104,14 +104,14 @@ object Form2: TForm2
     ChildSizing.ShrinkVertical = crsScaleChilds
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
-    ClientHeight = 285
+    ClientHeight = 496
     ClientWidth = 412
     ParentFont = False
     TabOrder = 5
     object RadioButton1: TRadioButton
       Tag = 1
       Left = 6
-      Height = 24
+      Height = 44
       Top = 6
       Width = 400
       Caption = 'RadioButton1'
@@ -121,14 +121,15 @@ object Form2: TForm2
       Font.Name = 'Segoe UI'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      OnChange = RadioButton1Change
       ParentFont = False
       TabOrder = 0
     end
     object RadioButton2: TRadioButton
       Tag = 2
       Left = 6
-      Height = 24
-      Top = 30
+      Height = 44
+      Top = 50
       Width = 400
       Caption = 'RadioButton2'
       Font.CharSet = ANSI_CHARSET
@@ -137,14 +138,15 @@ object Form2: TForm2
       Font.Name = 'Segoe UI'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      OnChange = RadioButton1Change
       ParentFont = False
       TabOrder = 1
     end
     object RadioButton3: TRadioButton
       Tag = 3
       Left = 6
-      Height = 25
-      Top = 54
+      Height = 44
+      Top = 94
       Width = 400
       Caption = 'RadioButton3'
       Font.CharSet = ANSI_CHARSET
@@ -153,14 +155,15 @@ object Form2: TForm2
       Font.Name = 'Segoe UI'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      OnChange = RadioButton1Change
       ParentFont = False
       TabOrder = 2
     end
     object RadioButton4: TRadioButton
       Tag = 4
       Left = 6
-      Height = 25
-      Top = 79
+      Height = 44
+      Top = 138
       Width = 400
       Caption = 'RadioButton4'
       Font.CharSet = ANSI_CHARSET
@@ -169,14 +172,15 @@ object Form2: TForm2
       Font.Name = 'Segoe UI'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      OnChange = RadioButton1Change
       ParentFont = False
       TabOrder = 3
     end
     object RadioButton5: TRadioButton
       Tag = 5
       Left = 6
-      Height = 25
-      Top = 104
+      Height = 44
+      Top = 182
       Width = 400
       Caption = 'RadioButton5'
       Font.CharSet = ANSI_CHARSET
@@ -185,14 +189,15 @@ object Form2: TForm2
       Font.Name = 'Segoe UI'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      OnChange = RadioButton1Change
       ParentFont = False
       TabOrder = 4
     end
     object RadioButton6: TRadioButton
       Tag = 6
       Left = 6
-      Height = 25
-      Top = 129
+      Height = 44
+      Top = 226
       Width = 400
       Caption = 'RadioButton6'
       Font.CharSet = ANSI_CHARSET
@@ -201,14 +206,15 @@ object Form2: TForm2
       Font.Name = 'Segoe UI'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      OnChange = RadioButton1Change
       ParentFont = False
       TabOrder = 5
     end
     object RadioButton7: TRadioButton
       Tag = 7
       Left = 6
-      Height = 25
-      Top = 154
+      Height = 44
+      Top = 270
       Width = 400
       Caption = 'RadioButton7'
       Font.CharSet = ANSI_CHARSET
@@ -217,14 +223,15 @@ object Form2: TForm2
       Font.Name = 'Segoe UI'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      OnChange = RadioButton1Change
       ParentFont = False
       TabOrder = 6
     end
     object RadioButton8: TRadioButton
       Tag = 8
       Left = 6
-      Height = 25
-      Top = 179
+      Height = 44
+      Top = 314
       Width = 400
       Caption = 'RadioButton8'
       Font.CharSet = ANSI_CHARSET
@@ -233,14 +240,15 @@ object Form2: TForm2
       Font.Name = 'Segoe UI'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      OnChange = RadioButton1Change
       ParentFont = False
       TabOrder = 7
     end
     object RadioButton9: TRadioButton
       Tag = 9
       Left = 6
-      Height = 25
-      Top = 204
+      Height = 44
+      Top = 358
       Width = 400
       Caption = 'RadioButton9'
       Font.CharSet = ANSI_CHARSET
@@ -249,14 +257,15 @@ object Form2: TForm2
       Font.Name = 'Segoe UI'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      OnChange = RadioButton1Change
       ParentFont = False
       TabOrder = 8
     end
     object RadioButton10: TRadioButton
       Tag = 10
       Left = 6
-      Height = 25
-      Top = 229
+      Height = 44
+      Top = 402
       Width = 400
       Caption = 'RadioButton10'
       Font.CharSet = ANSI_CHARSET
@@ -265,14 +274,15 @@ object Form2: TForm2
       Font.Name = 'Segoe UI'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      OnChange = RadioButton1Change
       ParentFont = False
       TabOrder = 9
     end
     object RadioButton11: TRadioButton
       Tag = 11
       Left = 6
-      Height = 25
-      Top = 254
+      Height = 44
+      Top = 446
       Width = 400
       Caption = 'RadioButton11'
       Font.CharSet = ANSI_CHARSET
@@ -281,15 +291,16 @@ object Form2: TForm2
       Font.Name = 'Segoe UI'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      OnChange = RadioButton1Change
       ParentFont = False
       TabOrder = 10
     end
   end
   object CheckGroup1: TCheckGroup
     Left = 619
-    Height = 520
+    Height = 516
     Top = 48
-    Width = 475
+    Width = 416
     AutoFill = True
     Caption = 'Condições'
     ChildSizing.LeftRightSpacing = 6
@@ -300,8 +311,8 @@ object Form2: TForm2
     ChildSizing.ShrinkVertical = crsScaleChilds
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
-    ClientHeight = 500
-    ClientWidth = 471
+    ClientHeight = 496
+    ClientWidth = 412
     ParentFont = False
     TabOrder = 6
     object CheckBox1: TCheckBox
@@ -309,7 +320,7 @@ object Form2: TForm2
       Left = 6
       Height = 24
       Top = 6
-      Width = 459
+      Width = 400
       Caption = 'CheckBox1 CheckBox1 CheckBox1CheckBox1'
       Color = clActiveCaption
       Font.CharSet = ANSI_CHARSET
@@ -329,7 +340,7 @@ object Form2: TForm2
       Left = 6
       Height = 24
       Top = 30
-      Width = 459
+      Width = 400
       Caption = 'CheckBox2'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -347,7 +358,7 @@ object Form2: TForm2
       Left = 6
       Height = 24
       Top = 54
-      Width = 459
+      Width = 400
       Caption = 'CheckBox3'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -365,7 +376,7 @@ object Form2: TForm2
       Left = 6
       Height = 24
       Top = 78
-      Width = 459
+      Width = 400
       Caption = 'CheckBox4'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -383,7 +394,7 @@ object Form2: TForm2
       Left = 6
       Height = 24
       Top = 102
-      Width = 459
+      Width = 400
       Caption = 'CheckBox5'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -401,7 +412,7 @@ object Form2: TForm2
       Left = 6
       Height = 24
       Top = 126
-      Width = 459
+      Width = 400
       Caption = 'CheckBox6'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -419,7 +430,7 @@ object Form2: TForm2
       Left = 6
       Height = 24
       Top = 150
-      Width = 459
+      Width = 400
       Caption = 'CheckBox7'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -437,7 +448,7 @@ object Form2: TForm2
       Left = 6
       Height = 24
       Top = 174
-      Width = 459
+      Width = 400
       Caption = 'CheckBox8'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -455,7 +466,7 @@ object Form2: TForm2
       Left = 6
       Height = 24
       Top = 198
-      Width = 459
+      Width = 400
       Caption = 'CheckBox9'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -473,7 +484,7 @@ object Form2: TForm2
       Left = 6
       Height = 24
       Top = 222
-      Width = 459
+      Width = 400
       Caption = 'CheckBox10'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -491,7 +502,7 @@ object Form2: TForm2
       Left = 6
       Height = 24
       Top = 246
-      Width = 459
+      Width = 400
       Caption = 'CheckBox11'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -509,7 +520,7 @@ object Form2: TForm2
       Left = 6
       Height = 24
       Top = 270
-      Width = 459
+      Width = 400
       Caption = 'CheckBox12'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -525,9 +536,9 @@ object Form2: TForm2
     object CheckBox13: TCheckBox
       Tag = 23
       Left = 6
-      Height = 25
+      Height = 24
       Top = 294
-      Width = 459
+      Width = 400
       Caption = 'CheckBox13'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -543,9 +554,9 @@ object Form2: TForm2
     object CheckBox14: TCheckBox
       Tag = 23
       Left = 6
-      Height = 25
-      Top = 319
-      Width = 459
+      Height = 24
+      Top = 318
+      Width = 400
       Caption = 'CheckBox14'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -561,9 +572,9 @@ object Form2: TForm2
     object CheckBox15: TCheckBox
       Tag = 23
       Left = 6
-      Height = 25
-      Top = 344
-      Width = 459
+      Height = 24
+      Top = 342
+      Width = 400
       Caption = 'CheckBox15'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -579,9 +590,9 @@ object Form2: TForm2
     object CheckBox16: TCheckBox
       Tag = 23
       Left = 6
-      Height = 25
-      Top = 369
-      Width = 459
+      Height = 24
+      Top = 366
+      Width = 400
       Caption = 'CheckBox16'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -598,8 +609,8 @@ object Form2: TForm2
       Tag = 23
       Left = 6
       Height = 25
-      Top = 394
-      Width = 459
+      Top = 390
+      Width = 400
       Caption = 'CheckBox17'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -616,8 +627,8 @@ object Form2: TForm2
       Tag = 23
       Left = 6
       Height = 25
-      Top = 419
-      Width = 459
+      Top = 415
+      Width = 400
       Caption = 'CheckBox18'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -634,8 +645,8 @@ object Form2: TForm2
       Tag = 23
       Left = 6
       Height = 25
-      Top = 444
-      Width = 459
+      Top = 440
+      Width = 400
       Caption = 'CheckBox19'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack
@@ -652,8 +663,8 @@ object Form2: TForm2
       Tag = 23
       Left = 6
       Height = 25
-      Top = 469
-      Width = 459
+      Top = 465
+      Width = 400
       Caption = 'CheckBox20'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clBlack

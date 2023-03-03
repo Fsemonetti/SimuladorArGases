@@ -106,7 +106,10 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure I723EMT1101BtDesliga(Sender: TObject);
     procedure I723EMT1101BtLiga(Sender: TObject);
     procedure I723EMT1101Click(Sender: TObject);
     procedure Panel5MouseUp(Sender: TObject; Button: TMouseButton;
@@ -128,7 +131,7 @@ type
 
 var
   Form1: TForm1;
-    meu : Tmgauge;
+  valores  : tstringlist;
 implementation
 
 {$R *.lfm}
@@ -137,7 +140,23 @@ implementation
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
+  valores:=tstringlist.Create;
+end;
 
+procedure TForm1.FormShow(Sender: TObject);
+begin
+     valores.LoadFromFile('valores.db');
+end;
+
+procedure TForm1.I723EMT1101BtDesliga(Sender: TObject);
+begin
+  form2.Caption:=I723EMT1101.Name;
+  form2.DisjNome.Caption:=I723EMT1101.Name;
+  form2.StaticText1.caption:='Desligado';
+  form2.Button1.caption:='Ligar';
+  form2.Button2.Caption:='Desligar';
+  form2.DisjNome1.caption:='Motor do ventilador induzido 1';
+  form2.showmodal;
 end;
 
 procedure TForm1.I723EMT1101BtLiga(Sender: TObject);
@@ -163,7 +182,6 @@ begin
   form2.StaticText1.caption:='Desligado';
   form2.Button1.caption:='Ligar';
   form2.Button2.Caption:='Desligar';
-
   form2.DisjNome1.caption:='Motor do ventilador induzido 1';
   form2.showmodal;
 end;
@@ -225,6 +243,11 @@ end;
 procedure TForm1.Button3Click(Sender: TObject);
 begin
      form3.show;
+end;
+
+procedure TForm1.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+begin
+  valores.Destroy;
 end;
 
 end.

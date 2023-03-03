@@ -1,24 +1,24 @@
-equipamento,Ação,Detalhe,tag associado,Descrição,Estado
-I723EMT1101,Ligar,Ligar como primeiro induzido,I723ZL2059,comporta descarga  1  induzido 1,fechada
-I723EMT1101,Ligar,Ligar como primeiro induzido,I723ZL2060,comporta descarga  2 induzido  1,fechada
-I723EMT1101,Ligar,Ligar como primeiro induzido,I723ZL2061,comporta descarga 1  induzido 2,fechada
-I723EMT1101,Ligar,Ligar como primeiro induzido,I723ZL2062,comporta descarga 2  induzido 2,fechada
-I723EMT1101,Ligar,Ligar como primeiro induzido,I723PCV3101,comporta controle induzido 1 ,fechada
-I723EMT1101,Ligar,Ligar como primeiro induzido,I723PL3501,Oleo lubirficação Anormal,Não Atuado
-I723EMT1101,Ligar,Ligar como primeiro induzido,I723PALL3202,Pressão fornalha <-250mmH²O,Não Atuado
-I723EMT1101,Ligar,Ligar como primeiro induzido,I723EMT1101_L,Comando Ligar Induzido,Presente
-I723EMT1101,Ligar,Ligar como segundo induzido,I723EMT1102,Induzido 2,ligado
-I723EMT1101,Ligar,Ligar como segundo induzido,I723ZL2059,comporta descarga 1 induzido 1,fechada
-I723EMT1101,Ligar,Ligar como segundo induzido,I723ZL2060,comporta descarga 2 induzido 1,fechada
-I723EMT1101,Ligar,Ligar como segundo induzido,I723PCV3101,comporta controle induzido 1 ,fechada
-I723EMT1101,Ligar,Ligar como segundo induzido,I723PL3501,Oleo lubirficação Anormal,Não Atuado
-I723EMT1101,Ligar,Ligar como segundo induzido,I723PALL3202,Pressão fornalha <-250mmH²O,Não Atuado
-I723EMT1101,Ligar,Ligar como segundo induzido,I723EMT1101_L,Comando Ligar Induzido,Presente
-I723EMT1101,Desligar,Desligar manual,I723FOG00001,Fornalha ,Apagada
-I723EMT1101,Desligar,Desligar manual,I723EMT1101_D,Comando desligar induzido,Presente
-I723EMT1101,Desligar,Desligar por proteção,I723THH3501,Mancal LNA ventilador,Atuado
-I723EMT1101,Desligar,Desligar por proteção,I723THH3502,Mancal LA ventilador,Atuado
-I723EMT1101,Desligar,Desligar por proteção,I723THH3506,Mancal LA Motor,Atuado
-I723EMT1101,Desligar,Desligar por proteção,I723THH3508,Mancal LNA Motor,Atuado
-I723EMT1101,Desligar,Desligar por proteção,I723PALL3202,Pressão fornalha <-250mmH²O,Atuado
-I723EMT1101,Desligar,Desligar por proteção,I723PLL3502,Pressão baixa oléo  durante 8 segundos,Atuado
+equipamento,Ação,Detalhe,tag associado,Descrição
+I723EMT1101,Ligar,Ligar como primeiro induzido,I723ZL2059,comporta descarga  1  induzido 1  -  fechada
+I723EMT1101,Ligar,Ligar como primeiro induzido,I723ZL2060,comporta descarga  2 induzido  1  -  fechada
+I723EMT1101,Ligar,Ligar como primeiro induzido,I723ZL2061,comporta descarga 1  induzido 2  -  fechada
+I723EMT1101,Ligar,Ligar como primeiro induzido,I723ZL2062,comporta descarga 2  induzido 2  -  fechada
+I723EMT1101,Ligar,Ligar como primeiro induzido,I723PCV3101,comporta controle induzido 1   -  fechada
+I723EMT1101,Ligar,Ligar como primeiro induzido,I723PL3501,Óleo lubrificação Anormal  -  Não Atuado
+I723EMT1101,Ligar,Ligar como primeiro induzido,I723PALL3202,Pressão fornalha <-250mmH²O  -  Não Atuado
+I723EMT1101,Ligar,Ligar como primeiro induzido,I723EMT1101_L,Comando Ligar Induzido  -  Presente
+I723EMT1101,Ligar,Ligar como segundo induzido,I723EMT1102,Induzido 2  -  ligado
+I723EMT1101,Ligar,Ligar como segundo induzido,I723ZL2059,comporta descarga 1 induzido 1  -  fechada
+I723EMT1101,Ligar,Ligar como segundo induzido,I723ZL2060,comporta descarga 2 induzido 1  -  fechada
+I723EMT1101,Ligar,Ligar como segundo induzido,I723PCV3101,comporta controle induzido 1   -  fechada
+I723EMT1101,Ligar,Ligar como segundo induzido,I723PL3501,Óleo lubrificação Anormal  -  Não Atuado
+I723EMT1101,Ligar,Ligar como segundo induzido,I723PALL3202,Pressão fornalha <-250mmH²O  -  Não Atuado
+I723EMT1101,Ligar,Ligar como segundo induzido,I723EMT1101_L,Comando Ligar Induzido  -  Presente
+I723EMT1101,Desligar,Desligar manual,I723FOG00001,Fornalha   -  Apagada
+I723EMT1101,Desligar,Desligar manual,I723EMT1101_D,Comando desligar induzido  -  Presente
+I723EMT1101,Desligar,Desligar por proteção,I723THH3501,Mancal LNA ventilador  -  Atuado
+I723EMT1101,Desligar,Desligar por proteção,I723THH3502,Mancal LA ventilador  -  Atuado
+I723EMT1101,Desligar,Desligar por proteção,I723THH3506,Mancal LA Motor  -  Atuado
+I723EMT1101,Desligar,Desligar por proteção,I723THH3508,Mancal LNA Motor  -  Atuado
+I723EMT1101,Desligar,Desligar por proteção,I723PALL3202,Pressão fornalha <-250mmH²O  -  Atuado
+I723EMT1101,Desligar,Desligar por proteção,I723PLL3502,Pressão baixa oléo  durante 8 segundos  -  Atuado
